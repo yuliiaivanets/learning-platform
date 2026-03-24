@@ -6,13 +6,17 @@ export default function AboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <nav>
-        <Link href="/about/us">Us</Link>
-        <Link href="/about/me">Me</Link>
-      </nav>
-
-      {children}
+    <div className="flex">
+      <aside className="h-screen bg-amber-600 w-36 fixed">
+        <nav
+          className="flex flex-col gap-2
+         text-white text-2xl p-4"
+        >
+          <Link href="/about/us">Us</Link>
+          <Link href="/about/me">Me</Link>
+        </nav>
+      </aside>
+      <div className="ml-36 p-4">{children}</div>
     </div>
   );
 }
