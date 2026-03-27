@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "npx drizzle-kit migrate"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -23,11 +25,19 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.3.1",
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "i": "^0.3.7",
+    "npm": "^11.12.1",
+    "pg": "^8.20.0",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

@@ -1,6 +1,7 @@
 import Category from "@/types/Category";
 import Link from "next/link";
 import Image from "next/image";
+import { CategoryCard } from "@/components/category-card";
 
 export default async function Products() {
   const res = await fetch("https://api.escuelajs.co/api/v1/categories/");
@@ -10,7 +11,8 @@ export default async function Products() {
     <ul className="flex flex-wrap items-center justify-center gap-5">
       {categories.map((category) => (
         <li key={category.id}>
-          <div className=" bg-violet-200  rounded-2xl shadow-2xl p-2 w-58 flex flex-col gap-2 items-center">
+          <CategoryCard category={category}/>
+          {/* <div className=" bg-violet-200  rounded-2xl shadow-2xl p-2 w-58 flex flex-col gap-2 items-center">
           <Link href={`/categories/${category.id}`}><h3 className="text-violet-700 hover:underline">{category.name}</h3></Link>
           <Image className="cursor-pointer"
                   src={category.image}
@@ -19,7 +21,7 @@ export default async function Products() {
                   height={200}
                   unoptimized
                 />
-          </div>
+          </div> */}
         </li>
       ))}
     </ul>
