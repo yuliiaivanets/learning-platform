@@ -8,6 +8,27 @@
       "when": 1774607270455,
       "tag": "0000_funny_stick",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1774857104105,
+      "tag": "0001_overjoyed_venom",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1774929424168,
+      "tag": "0002_needy_slyde",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1774931085763,
+      "tag": "0003_volatile_leech",
+      "breakpoints": true
     }
   ]
 }

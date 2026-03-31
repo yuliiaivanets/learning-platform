@@ -6,9 +6,10 @@ export default function NavBar() {
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
       <Link href="/courses">Courses</Link>
+      <Link href="/groups">Groups</Link>
+      <Link href="/reviews">Add review</Link>
       <Link href="/products">Products</Link>
-       <Link href="/categories">Categories</Link>
-      <Link href="/write-curator">Write to your curator</Link>
+      <Link href="/categories">Categories</Link>
       <Link href="/profile">Profile</Link>
       <Link href="/grids">Grids</Link>
     </nav>
